@@ -51,7 +51,7 @@
                 }
               ],
               "outputHashing": "all",
-              "extraWebpackConfig": "webpack.prod.config.js"
+              "extraWebpackConfig": "webpack.prod.config.ts"
             },
             "development": {
               "buildOptimizer": false,
@@ -69,7 +69,7 @@
           "configurations": {
             "production": {
               "browserTarget": "angular15-mf-sample:build:production",
-              "extraWebpackConfig": "webpack.prod.config.js"
+              "extraWebpackConfig": "webpack.prod.config.ts"
             },
             "development": {
               "browserTarget": "angular15-mf-sample:build:development"
