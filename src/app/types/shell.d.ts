@@ -4,7 +4,10 @@ interface Shell {
   navigate?: (
     path: string,
     options?: {
+      replace?: boolean;
       state?: any;
+      preventScrollReset?: boolean;
+      relative?: any;
     },
   ) => void;
 }
