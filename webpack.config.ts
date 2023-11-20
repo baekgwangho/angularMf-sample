@@ -72,6 +72,11 @@ module.exports = {
       'Access-Control-Allow-Origin': '*',
     },
     hot: true,
+    client: {
+      overlay: false,
+      // 웹소켓용 url 지정
+      // webSocketURL: 'ws://localhost:80/ws',
+    },
   },
   resolve: {
     alias: {

@@ -21,4 +21,9 @@ export class AppComponent {
   goToSample3() {
     this.router.navigateByUrl('sample2')
   }
+
+  goTo() {
+    window.shell?.navigate?.('/');
+    // this.router.navigateByUrl('con/**/tent')
+  }
 }
