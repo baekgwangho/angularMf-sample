@@ -1,7 +1,12 @@
 export {};
 
 interface Shell {
-  navigate?: (path: string) => void;
+  navigate?: (
+    path: string,
+    options?: {
+      state?: any;
+    },
+  ) => void;
 }
 
 declare global {
