@@ -54,12 +54,13 @@ console.log('@@@@@@@@@@@@@@@@@@@@@@@@@');
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
   path.join(__dirname, 'tsconfig.json'),
-  [/* mapped paths to share */]);
+  [/* mapped paths to share */], '/angular/');
 
 module.exports = {
   output: {
     uniqueName: 'angularSample',
     publicPath: 'auto',
+    // path: path.resolve(__dirname, `../dist`),
     scriptType: 'text/javascript',
   },
   optimization: {
@@ -99,10 +100,10 @@ module.exports = {
 
 
       shared: share({
-        '@angular/core': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-        '@angular/common': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-        '@angular/common/http': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-        '@angular/router': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+        '@angular/core': {  singleton: true, strictVersion: true, requiredVersion: 'auto' },
+        '@angular/common': {  singleton: true, strictVersion: true, requiredVersion: 'auto' },
+        '@angular/common/http': {  singleton: true, strictVersion: true, requiredVersion: 'auto' },
+        '@angular/router': {  singleton: true, strictVersion: true, requiredVersion: 'auto' },
 
         ...sharedMappings.getDescriptors(),
       }),
