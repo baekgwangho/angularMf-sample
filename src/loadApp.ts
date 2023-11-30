@@ -26,6 +26,8 @@ if (environment.production) {
 // const mount = () => {
 //   platform.bootstrapModule(AppModule, { ngZone: (window as any).ngZone }).catch((err: any) => console.error(err));
 // };
+//
+// https://github.com/manfredsteyer/multi-framework-micro-frontend.git
 
 const mount = ()=>{
   platformBrowserDynamic().bootstrapModule(AppModule)
