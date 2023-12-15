@@ -5,9 +5,10 @@
 
       <button (click)="onClick()">sampleeeee</button>
       <button (click)="goToSample3()">sample3</button>
-      <button (click)="goTo('/contents')">AEM</button>
-      <button (click)="goTo('/')">SHELL</button>
-      <button (click)="goTo('/contents/a')">ddddddd</button>
+      <button (click)="goTo($event,'/contents')">AEM</button>
+      <button (click)="goTo($event,'/')">SHELL</button>
+      <button (click)="goTo($event,'/contents/a')">ddddddd</button>
+      <button (click)="goTo2($event,'/contents/a')">window</button>
     </div>
     <app-my-counter/>
   </router-outlet>
